@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To-do List</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea" class="input" />
+        <button onclick="agregarTarea()" class="button">Agregar Tarea</button>
+
+        <div class="contadores">
+            <span id="total">Total: 0</span>
+            <span id="completadas">Completadas: 0</span>
+            <span id="pendientes">Pendientes: 0</span>
+        </div>
+
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
